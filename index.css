@@ -1,0 +1,84 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  color: rgb(0, 0, 0);
+}
+.container {
+    background-image: linear-gradient(45deg,yellow,rgb(236, 209, 157));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+                    "dis dis dis dis"
+                    "ac ac div multiply"
+                    "seven eight nine subtract"
+                    "four five six add"
+                    "one two three equals"
+                    "zero zero dot equals"
+    ;
+  }
+  .padButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #clear{
+      grid-area: ac;
+  }
+  #zero{
+    grid-area: zero;
+  }
+  #equals{
+    grid-area: equals;
+  }
+  .dis{
+    grid-area: dis;
+    background-color: white;
+    border: 1px solid black;
+    float: right;
+    
+  }
+  .dark-gray{
+    background-color: darkgray;
+  }
+  .tomato{
+    background-color: tomato;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .text{
+    width: 100%;
+    padding: 5px 20px;
+    color: rgb(3, 4, 59);
+    text-align:right;
+    background-color: white;
+   
+  }
+  .total{
+    padding: 5px 20px;
+    color: rgb(255, 255, 255);
+    float: right;
+  
+  }
+  .padButton:hover{
+    border: 1px solid white;
+    color: #ccc;
+  }
